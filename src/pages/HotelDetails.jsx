@@ -1,8 +1,10 @@
+import Layout from "../components/layout/Layout";
+
 function HotelDetails() {
     return (
-        <div>
+        <Layout>
             <h1>Hotel Details</h1>
-        </div>
+        </Layout>
     );
 }
 

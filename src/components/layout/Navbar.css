@@ -1,0 +1,145 @@
+.navbar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    backdrop-filter:blur(18px);
+
+    background:rgba(25,45,90,.28);
+
+    border-bottom:1px solid rgba(255,255,255,.12);
+
+    transition:.35s;
+
+}
+
+.navbar-container{
+
+    max-width:1400px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 40px;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:1.8rem;
+
+    font-weight:700;
+
+}
+
+.logo svg{
+
+    color:#FDBA12;
+
+    font-size:2rem;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:40px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-weight:600;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:#FDBA12;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#FDBA12;
+
+}
+
+nav a:hover::after{
+
+    width:100%;
+
+}
+
+.navbar-icons{
+
+    display:flex;
+
+    gap:22px;
+
+    color:white;
+
+    font-size:1.3rem;
+
+}
+
+.navbar-icons svg{
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.navbar-icons svg:hover{
+
+    color:#FDBA12;
+
+    transform:translateY(-3px);
+
+}
