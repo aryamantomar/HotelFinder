@@ -51,8 +51,15 @@ function HotelDetails() {
             >
                 <h2>Hotel Not Found</h2>
 
-                <Link to="/">
-                    Go Back Home
+                <Link
+                    to="/"
+                    style={{
+                        textDecoration: "none",
+                        color: "#2563eb",
+                        fontWeight: "600",
+                    }}
+                >
+                    ← Back Home
                 </Link>
             </div>
         );
@@ -92,17 +99,10 @@ function HotelDetails() {
 
             <h3>📍 {hotel.location}</h3>
 
-            <p
-                style={{
-                    fontSize: "20px",
-                }}
-            >
-                ⭐ {hotel.rating}
-            </p>
-
             <h2
                 style={{
                     color: "#2563eb",
+                    marginTop: "10px",
                 }}
             >
                 ₹{Math.round(hotel.price)} / night
@@ -110,8 +110,18 @@ function HotelDetails() {
 
             <p
                 style={{
+                    fontSize: "20px",
+                    marginTop: "10px",
+                }}
+            >
+                ⭐ {hotel.rating}
+            </p>
+
+            <p
+                style={{
                     marginTop: "20px",
                     lineHeight: "1.8",
+                    fontSize: "17px",
                 }}
             >
                 {hotel.description}
@@ -141,35 +151,44 @@ function HotelDetails() {
 
             <div
                 style={{
+                    display: "flex",
+                    gap: "15px",
                     marginTop: "40px",
                 }}
             >
                 <Link
-                    to="/hotels"
+                    to="/"
                     style={{
                         textDecoration: "none",
                         padding: "14px 28px",
                         background: "#2563eb",
                         color: "#fff",
                         borderRadius: "10px",
-                        marginRight: "15px",
+                        fontWeight: "600",
+                        display: "inline-flex",
+                        justifyContent: "center",
+                        alignItems: "center",
                     }}
                 >
-                    ← Back to Hotels
+                    ← Back
                 </Link>
 
-                <button
+                <Link
+                    to={`/booking/${hotel.id}`}
                     style={{
+                        textDecoration: "none",
                         padding: "14px 28px",
                         background: "#f59e0b",
                         color: "#fff",
-                        border: "none",
                         borderRadius: "10px",
-                        cursor: "pointer",
+                        fontWeight: "600",
+                        display: "inline-flex",
+                        justifyContent: "center",
+                        alignItems: "center",
                     }}
                 >
                     Book Now
-                </button>
+                </Link>
             </div>
         </div>
     );

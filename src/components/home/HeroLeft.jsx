@@ -1,4 +1,4 @@
-import SearchBar from "../search/SearchBar";
+import { Link } from "react-router-dom";
 import HeroStats from "./HeroStats";
 
 function HeroLeft() {
@@ -19,7 +19,47 @@ function HeroLeft() {
                 the world with the best prices guaranteed.
             </p>
 
-            <SearchBar />
+            <div
+                style={{
+                    marginTop: "40px",
+                    display: "flex",
+                    gap: "20px",
+                }}
+            >
+
+                <Link
+                    to="/hotels"
+                    style={{
+                        textDecoration: "none",
+                        background: "#f59e0b",
+                        color: "#fff",
+                        padding: "18px 40px",
+                        borderRadius: "50px",
+                        fontWeight: "700",
+                        fontSize: "18px",
+                        transition: ".3s",
+                    }}
+                >
+                    Explore Hotels
+                </Link>
+
+                <Link
+                    to="/hotels"
+                    style={{
+                        textDecoration: "none",
+                        border: "2px solid white",
+                        color: "#fff",
+                        padding: "18px 40px",
+                        borderRadius: "50px",
+                        fontWeight: "700",
+                        fontSize: "18px",
+                        backdropFilter: "blur(10px)",
+                    }}
+                >
+                    Book Now
+                </Link>
+
+            </div>
 
             <HeroStats />
 
