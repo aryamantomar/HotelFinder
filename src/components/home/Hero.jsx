@@ -1,7 +1,7 @@
 import "./Hero.css";
 
-import SearchBar from "../search/SearchBar";
-import HeroStats from "./HeroStats";
+import HeroLeft from "./HeroLeft";
+import HeroRight from "./HeroRight";
 
 function Hero() {
 
@@ -9,19 +9,11 @@ function Hero() {
 
         <section className="hero">
 
-            <div className="hero-content">
+            <div className="hero-container">
 
-                <h1>
-                    Discover Your Perfect Stay
-                </h1>
+                <HeroLeft />
 
-                <p>
-                    Explore luxury hotels, resorts and apartments around the world.
-                </p>
-
-                <SearchBar />
-
-                <HeroStats />
+                <HeroRight />
 
             </div>
 

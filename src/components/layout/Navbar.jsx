@@ -29,7 +29,7 @@ function Navbar() {
 
                     <Link to="/">Home</Link>
 
-                    <Link to="/">Hotels</Link>
+                    <Link to="/hotels">Hotels</Link>
 
                     <Link to="/">Destinations</Link>
 

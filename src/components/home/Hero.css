@@ -49,23 +49,17 @@
 
 .search-box{
 
-    background:white;
+    background:rgba(255,255,255,.92);
 
-    border-radius:20px;
+    backdrop-filter:blur(20px);
 
-    padding:25px;
+    border-radius:28px;
 
-    display:grid;
+    padding:28px;
 
-    grid-template-columns:repeat(4,1fr);
+    box-shadow:0 30px 70px rgba(0,0,0,.25);
 
-    gap:15px;
-
-    margin-bottom:35px;
-
-    box-shadow:0 20px 40px rgba(0,0,0,.15);
 }
-
 .search-box input{
 
     padding:16px;
@@ -103,4 +97,160 @@
     transform:translateY(-4px);
 
     background:#d97706;
+}
+.hero-tag{
+
+    display:inline-block;
+
+    background:rgba(255,255,255,.18);
+
+    padding:10px 22px;
+
+    border-radius:50px;
+
+    margin-bottom:25px;
+
+    backdrop-filter:blur(12px);
+
+    font-weight:600;
+
+    letter-spacing:.5px;
+}
+
+.hero h1{
+
+    font-size:4.5rem;
+
+    line-height:1.1;
+}
+
+.hero p{
+
+    max-width:750px;
+
+    margin:25px auto 50px;
+
+    font-size:1.2rem;
+
+    line-height:1.8;
+}
+.hero-container{
+
+    width:min(1400px,92%);
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.hero-left h1{
+
+    font-size:clamp(3.8rem,6vw,5.5rem);
+
+    line-height:1.05;
+
+    max-width:650px;
+
+    margin:20px 0;
+
+    font-weight:800;
+
+}
+
+.hero-left p{
+
+    max-width:560px;
+
+    font-size:1.15rem;
+
+    line-height:1.9;
+
+    color:rgba(255,255,255,.9);
+
+    margin-bottom:45px;
+
+}
+
+.hero-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:14px 24px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    font-weight:600;
+
+}
+
+.hero-right{
+
+    position:relative;
+
+}
+
+.hero-right img{
+
+    width:100%;
+
+    height:650px;
+
+    object-fit:cover;
+
+    border-radius:30px;
+
+    box-shadow:0 35px 80px rgba(0,0,0,.3);
+
+}
+
+.floating-card{
+
+    position:absolute;
+
+    bottom:30px;
+
+    left:-30px;
+
+    padding:25px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(20px);
+
+    color:white;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.2);
+
+}
+.booking-card{
+
+    top:40px;
+
+    right:-20px;
+
+    left:auto;
+
+    bottom:auto;
+
+    padding:18px 24px;
+
 }

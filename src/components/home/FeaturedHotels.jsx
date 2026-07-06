@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import HotelCard from "../hotel/HotelCard";
 import { getHotels } from "../../services/api";
+import "./FeaturedHotels.css";
 
 function FeaturedHotels() {
     const [hotels, setHotels] = useState([]);
@@ -10,10 +11,6 @@ function FeaturedHotels() {
         async function loadHotels() {
             try {
                 const data = await getHotels();
-
-                console.log(data);
-                console.log(data[0]);
-
                 setHotels(data);
             } catch (error) {
                 console.error("Error fetching hotels:", error);
@@ -27,32 +24,40 @@ function FeaturedHotels() {
 
     if (loading) {
         return (
-            <section style={{ padding: "80px", textAlign: "center" }}>
+            <section className="featured-hotels">
                 <h2>Loading Hotels...</h2>
             </section>
         );
     }
 
     return (
-        <section style={{ padding: "80px" }}>
-            <h2
-                style={{
-                    textAlign: "center",
-                    marginBottom: "40px",
-                }}
-            >
-                Featured Hotels
-            </h2>
+        <section className="featured-hotels">
 
+            <div className="section-title">
+
+                <div>
+                    <h2>Featured Hotels</h2>
+
+                    <p>
+                        Hand-picked luxury stays selected for every traveler.
+                    </p>
+                </div>
+
+                <button className="view-all-btn">
+                    View All →
+                </button>
+
+            </div>
 
             <div className="hotel-grid">
-                {hotels.map((hotel) => (
+                {hotels.slice(0, 6).map((hotel) => (
                     <HotelCard
                         key={hotel.id}
                         hotel={hotel}
                     />
                 ))}
             </div>
+
         </section>
     );
 }

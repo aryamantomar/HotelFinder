@@ -1,0 +1,79 @@
+.featured-hotels{
+
+    max-width:1400px;
+
+    margin:100px auto;
+
+    padding:0 30px;
+
+}
+
+.section-title{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:50px;
+
+}
+
+.section-title h2{
+
+    font-size:2.6rem;
+
+    color:#0f172a;
+
+    margin-bottom:10px;
+
+}
+
+.section-title p{
+
+    color:#64748b;
+
+    font-size:1rem;
+
+}
+
+.view-all-btn{
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:14px 28px;
+
+    border-radius:14px;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.view-all-btn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-3px);
+
+}
+
+.hotel-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+}

@@ -1,0 +1,62 @@
+.destinations{
+
+    width:min(1500px,94%);
+
+    margin:120px auto;
+
+    padding:0 30px;
+
+}
+
+.section-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-end;
+
+    margin-bottom:60px;
+
+}
+
+.section-header h2{
+
+    font-size:2.5rem;
+
+    margin-bottom:10px;
+
+}
+
+.section-header p{
+
+    color:#64748b;
+
+}
+
+.section-header button{
+
+    border:none;
+
+    background:#2563EB;
+
+    color:white;
+
+    padding:14px 24px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+}
+
+.destination-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:32px;
+
+}
